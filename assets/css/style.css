@@ -1,0 +1,677 @@
+/* 
+    PEDRO HENRIQUE V CORDISTA
+    CREATIVECODE | DEVSPACE
+    //
+    
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Dosis:300&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:400,700&display=swap');
+* {
+    max-width: 100vw !important;
+    box-sizing: border-box
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    box-sizing: border-box;
+    max-width: 100vw !important;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    color: #364656;
+}
+
+:root {
+    --green: #15bf86;
+    --yellow: #f89321;
+    --red: #ee2424;
+}
+
+strong {
+    font-weight: bold;
+}
+
+input::placeholder, textarea::placeholder {
+    padding-left: 15px;
+    color: black
+}
+
+textarea::placeholder {
+    padding-top: 0;
+}
+
+input, textarea {
+    border: 1px solid black !important;
+    margin-bottom: 10px !important
+}
+
+/********************* HELPERS *********************/
+
+.sectionStartTwo {
+    margin-top: 5rem
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.verdana {
+    font-family: 'Verdana', Helvetica, Arial, Lucida, sans-serif;
+}
+
+.divider {
+    width: 110px;
+    height: 3px;
+    margin-bottom: 1.5rem;
+}
+
+.bgYellow {
+    background-color: var(--yellow) !important
+}
+
+.bgGreen {
+    background-color: var(--green) !important
+}
+
+.bgRed {
+    background-color: var(--red) !important
+}
+
+/********************* MENU *********************/
+
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999999;
+    transition: .3s;
+}
+
+.menurow {
+    transition: .3s
+}
+
+.menuscroll {
+    background-color: black;
+}
+
+.menu-logo-scroll {
+    position: absolute;
+    top: 0;
+}
+
+.menurowsmall {
+    height: 100px
+}
+
+.menu .row {
+    display: flex;
+    align-items: center;
+}
+
+.menu-text>a {
+    display: inline-block;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.menu-text>a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 3px;
+    background: var(--green);
+    transition: width .3s;
+    margin-top: 5px;
+}
+
+.a-menu-cta::after {
+    margin-top: 8px !important
+}
+
+.menu-text>a:hover::after {
+    width: 100%;
+}
+
+.menu-cta {
+    padding: 0.2em 1em .3em;
+    border: 2px solid white;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s;
+    border-radius: 3px;
+}
+
+.menu-cta:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.menumobile {
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    right: 0;  
+    padding: 0 1rem;
+}
+
+.menumobile_logo > img  {
+    width: 20%;
+    max-width: 80px !important;
+}
+
+.menumobile_toogle {
+    color: var(--blue);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    cursor: pointer
+}
+
+.menumobile_toogle > i {
+    font-size: 2.5rem;
+    color: white
+}
+
+
+.pushmenu { /*this is the nav*/
+    background: black;
+    font-family: Montserrat;
+    width: 100%;
+    color: white;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+    position:fixed;
+}
+  
+.pushmenu a {
+    display: block;
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    padding: 20px 0
+}
+
+.pushmenu a:hover {
+    background-color: rgba(255, 255, 255, .2)
+}
+  
+.pushmenu a:active {
+    background: #454f5c;
+    color: #fff;
+}
+  
+.pushmenu-right {
+    right: -100%;
+  
+}
+  
+.pushmenu-right.pushmenu-open {
+    right: 0;
+}
+  
+.pushmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    right: 0;
+}
+  
+.pushmenu-push-toleft {
+    right: 100%;
+}
+  
+/*Transition*/
+.pushmenu, .pushmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;  
+}
+
+/********************* APRESENTAÇÃO *********************/
+
+.apresentacao-title {
+    padding-top: 2rem
+}
+
+.apresentacao-title p {
+    line-height: .5rem
+}
+
+.apresentacao-text {
+    line-height: 2rem
+}
+
+.carousel-bg {
+    padding: 3rem 2rem 0 0 !important;
+}
+
+.carousel-bg-yellow::after {
+    content: ' ';
+    background-color: var(--yellow);
+    width: 90%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.carousel-empresarios {
+    height: 450px
+}
+
+.apresentacao-content-left {
+    padding-right: 2.5rem !important
+}
+
+.apresentacao-content-right {
+    padding-left: 2.5rem !important
+}
+
+.carousel-bg-left {
+    padding: 3rem 0 0 2rem !important;
+}
+
+.carousel-bg-green::after {
+    content: ' ';
+    background-color: var(--green);
+    width: 90%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.carousel-bg-red::after {
+    content: ' ';
+    background-color: var(--red);
+    width: 90%;
+    height: 95%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+/********************* PARALLAX *********************/
+
+.parallax-container {
+    font-family: 'Montserrat'
+}
+
+.parallax-content {
+    width: 50% !important;
+    max-width: 600px !important;
+}
+
+.parallax-container p {
+    line-height: .5rem
+}
+
+.parallax-container .divider {
+    margin: 0 auto
+}
+
+.parallax-text {
+    font-size: 16px;
+    line-height: 2rem
+}
+
+.parallax-cta {
+    border: 1px solid white;
+    padding: .5rem 3.5rem;
+    font-family: 'Dosis';
+    border-radius: 7px;
+    transition: .3s;
+    letter-spacing: 2px;
+}
+
+.parallax-cta:hover {
+    background-image: initial!important;
+    background-color: rgba(248, 147, 33, 0.66)!important;
+}
+
+/********************* ESTRUTURA *********************/
+
+.estrutura {
+    padding-top: 3rem !important;
+    font-family: 'Montserrat'
+}
+
+.section-title p {
+    line-height: .5rem;
+}
+
+.section-title .divider {
+    margin: 0 auto
+}
+
+.estrutura-text {
+    line-height: 2rem
+}
+
+.estrutura video {
+    width: 95% !important;
+    transition: .3s
+}
+
+.estrutura video:hover {
+    transform: translateX(0px) translateY(-15px);
+}
+
+.videooverlay::after {
+    content: ' ';
+    background-color: #12060a;
+    width: 95%;
+    position: absolute;
+    right: 0;
+    bottom: -2.5rem;
+    z-index: -1;
+    height: 50%;
+}
+
+.estruturabg {
+    position: absolute;
+    left: 0;
+    top: 30%;
+    max-width: 6% !important;
+    z-index: -1;
+}
+
+/********************* GALERIA *********************/
+
+.nav {
+    display: block !important
+}
+
+#lightbox {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAA9JREFUeNpiYGBg2AwQYAAAuAC01qHx9QAAAABJRU5ErkJggg==) repeat;
+    background: rgba(0, 0, 0, .8);
+}
+
+#lightbox p {
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    right: 10px;
+    top: 10px;
+    text-align: right;
+    padding: .25em .5em;
+    color: #fff;
+    margin-right: 20px;
+    font-size: 20px;
+    background: rgba(100, 100, 100, .5);
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+#slideshow {
+    position: relative;
+    z-index: 100;
+    text-align: center;
+    width: 95%;
+    height: 95%;
+    margin: 10 auto;
+    padding: 0px;
+    background-color: transparent;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+}
+
+#slideshow img {
+    position: absolute;
+    top: 5%;
+    left: 0px;
+    right: 0px;
+    bottom: 5%;
+    align: center;
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+}
+
+.nav {
+    display: none;
+    z-index: 999;
+}
+
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    z-index: 999;
+    cursor: pointer;
+    background: rgba(100, 100, 100, .5);
+    padding: .25em .5em;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 7px;
+    -moz-border-radius: 7px;
+    -webkit-border-radius: 7px;
+}
+
+.next {
+    right: 10px;
+}
+
+.prev {
+    left: 10px;
+}
+
+.thumb {
+    height: auto;
+}
+
+.lightboxOverlay {
+    opacity: 0;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0
+}
+
+.lightboxOverlay:hover {
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.59);
+    border-color: rgba(0, 0, 0, 0.59);
+}
+
+.lightboxOverlay>i {
+    font-size: 3.5rem;
+    color: white
+}
+
+.galeriarowfix>div {
+    margin-top: -5px;
+}
+
+/********************* INSTAGRAM *********************/
+
+.instagram {
+    padding: 4rem 0 !important
+}
+
+/********************* DESCONTO *********************/
+
+.desconto {
+    font-size: 36px;
+    color: #ffffff!important;
+    line-height: 1.5em;
+    text-align: center;
+}
+
+.descontobg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 8rem;
+    top: -8rem;
+    height: calc(100% + 8rem);
+    width: 100%;
+}
+
+.descontobg2 {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    height: 95%;
+    width: 100%;
+}
+
+#type-container {
+    display: inline;
+    text-align: center;
+}
+
+.typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes blink {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/********************* MAPA *********************/
+
+.mapa iframe {
+    width: 100%;
+}
+
+/********************* FOOTER *********************/
+
+.footer-form {
+    width: 70%;
+}
+
+.footer-form textarea {
+    height: 100px
+}
+
+.footer-form a {
+    display: block;
+    padding: 5px 0;
+    border: 1px solid black;
+    border-radius: 3px;
+    transition: .3s;
+    font-family: 'Montserrat';
+    color: black;
+    letter-spacing: 2px;
+}
+
+.footer-form a:hover {
+    background-color: var(--yellow);
+    color: white
+}
+
+.footer-contatos {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: 'Montserrat';
+    font-size: .85rem
+}
+
+.footer-contatos-title {
+    font-size: 19px;
+    line-height: 1.1rem;
+    font-family: 'Quicksand'
+}
+
+.footer-title {
+    font-size: 33px;
+    font-weight: 700;
+    font-family: 'Quicksand'
+}
+
+.footer-images img {
+    height: 25px;
+    margin: 0 5px
+}
+
+.footer-frase {
+    font-family: 'QuickSand';
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 22px
+}
+
+.divider-footer {
+    height: 3px;
+    background-color: rgba(255,255,255,0.1);
+}
+
+.copyright {
+    padding: 2rem 0;
+    font-size: 7px;
+    letter-spacing: 5px;
+}
+
+.footer-copy {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.footerfix {
+    height: 5px;
+    margin-top: -5px;
+}

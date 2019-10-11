@@ -1,0 +1,128 @@
+@media (min-width: 1500px) {
+    .container {
+        width: 60% !important
+    }
+}
+
+@media (max-width: 999px) {
+
+    .footer-form {
+        padding-top: 3rem;
+    }
+
+    .footer-form a {
+        border: 1px solid white;
+        color: white;
+    }
+    .footer-contatos {
+        position: relative;
+        margin-top: 2rem
+    }
+    .footer-title {
+        font-size: 23px;
+    }
+    .footer-contatos .divider {
+        display: none
+    }
+    .footer-images {
+        height: 0px;
+        opacity: 0;
+    }
+    .footer-frase {
+        margin-top: 1rem;
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .footer-logo {
+        width: 20%;
+        margin: 3rem 0
+    }
+    .footer-copy {
+        position: absolute;
+        right: 0;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+    }
+    .footer-form > .sectionStart {
+        margin-top: 0px !important
+    }
+    .copyright {
+            padding: .5rem 0;
+            text-align: center;
+    }
+    #contato > img {
+        min-height: 1300px
+    }
+    .footer-contatos {
+        font-size: 1.3rem;
+    }
+    .footer-form > .section-title {
+        color: white !important
+    }
+    .footer-form {
+        width: 100%;
+    }
+    input, textarea {
+        border: 1px solid white !important;
+        margin-bottom: 5px !important;
+        color: white;
+    }
+    input::placeholder, textarea::placeholder {
+        color: white !important;
+    }
+}
+
+@media (max-width: 768px) {
+    
+
+    .footer-logo {
+        width: 20%;
+        margin: 3rem 0
+    }
+    .section-title {
+        margin-top: 5rem;
+    }
+    .menumobile_logo > img {
+        width: 20%;
+    }
+}
+
+@media (max-width: 480px) {
+    .menumobile_logo > img {
+        width: 20%;
+    }
+    .parallax-content {
+        width: 90% !important;
+        max-width: 600px !important;
+    }
+    .videooverlay::after {
+        bottom: -1rem;
+    }
+    .footer-logo {
+        width: 30%;
+        margin: 10px 0
+    }
+    .footer-frase {
+        margin-top: 1rem;
+        font-size: 15px;
+        line-height: 15px;
+    }
+    .footer-contatos {
+        font-size: .85rem;
+    }
+
+    .section-title {
+        margin-top: 0rem;
+    }
+}
+
+@media (max-width: 370px) {
+    #contato > img {
+        min-height: 1300px
+    }
+}
