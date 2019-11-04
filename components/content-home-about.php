@@ -1,6 +1,6 @@
 <section class="estrutura relative">
     <img src="assets/img/bg-estrutura.png" class="estruturabg desktop">
-    <div class="container">
+    <div class="containerEighteen">
         <div class="section-title center-align">
             <p>
                 <strong class="textUpper">
@@ -13,14 +13,6 @@
             <div class="divider black"></div>
         </div>
         <div class="row sectionStart">
-            <div class="col s12 m6 l6 margin_2_top hide-on-med-and-up">
-                <div class="video relative">
-                    <video controls="">
-                        <source type="video/mp4" src="assets/videos/estrutura.mp4">
-                    </video>
-                    <div class="videooverlay"></div>
-                </div>
-            </div>
             <div class="col s12 m6 l6 margin_2_top_mobile">
                 <p>
                     <strong class="textUpper">
@@ -39,7 +31,7 @@
                     </p>
                 </div>
             </div>
-            <div class="col s12 m6 l6 margin_2_top hide-on-small-only">
+            <div class="col s12 m6 l6 margin_2_top">
                 <div class="video relative">
                     <video controls="">
                         <source type="video/mp4" src="assets/videos/estrutura.mp4">

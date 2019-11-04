@@ -1,8 +1,11 @@
 <section class="menu hide-on-med-and-down">
-    <div class="container">
+    <div class="containerEighteen">
         <div class="row menurow">
             <div class="col s12 m12 l3 menu-logo">
+                <a href="#0">
                 <img src="assets/img/twin-towers.jpg" class="menu-logo-img">
+                <a href="#0">
+
             </div>
             <div class="col s12 m12 l9 menu-text white-text right-align">
                 <a href="#0" class="textCapitalize">
@@ -42,8 +45,8 @@
         <i class="material-icons">close</i>
     </div>
     <a href="index.php">Home</a>
-    <a href="index.php#sobre">sobre</a>
-    <a href="index.php#servicos">serviços</a>
-    <a href="index.php#blog">blog</a>
+    <a href="index.php#sobre">auditórios</a>
+    <a href="index.php#servicos">Salas Comerciais</a>
+    <a href="#contato">Contato</a>
 
 </div>

@@ -1,7 +1,5 @@
-<div class="footer relative" id="contato">
-    <img src="assets/img/bg-footer-mobile.jpg" class="widthfull hide-on-med-and-up" >
-    <img src="assets/img/bg-footer-tablet.jpg" class="widthfull hide-on-small-only hide-on-large-only" style="min-height: 1600px;">
-    <img src="assets/img/bg-footer.jpg" class="widthfull hide-on-med-and-down" style="min-height: 1200px;">
+<div class="footer relative">
+    <img src="assets/img/bg-footer.jpg" class="widthfull hide-on-med-and-down" style="min-height: 1200px; display:block">
     <div class="full_absolute">
         <div class="container">
             <div class="footer-form center-align">
@@ -49,7 +47,7 @@
             </div>
         </div>
 
-        <div class="footer-contatos white-text">
+        <div class="footer-contatos white-text"  id="contato">
             <div class="container">
                 <div class="footer-contatos-title hide-on-med-and-down">
                     <strong>
@@ -75,11 +73,11 @@
                             <a href="#0">@edificiotwintowers</a>
                         </div>
                         <div class="row margin_1_top">
-                            <div class="col s6 flex alignCenter">
+                            <div class="col s12 flex alignCenter">
                                 <img src="assets/img/icon-phone.png" class="iconLeft">
                                 Salas: (43) 3371-1918
                             </div>
-                            <div class="col s6 flex alignCenter">
+                            <div class="col s12 flex alignCenter">
                                 <img src="assets/img/icon-whatsapp.png" class="iconLeft">
                                 (43) 9 9919-7555
                             </div>

@@ -1,5 +1,5 @@
 <section class="galeria relative sectionStartTwo">
-    <div class="container">
+    <div class="containerEighteen">
         <div class="section-title center-align">
             <p>
                 <strong class="textUpper">

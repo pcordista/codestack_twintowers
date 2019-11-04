@@ -1,6 +1,6 @@
 
 <section class="instagram black white-text">
-    <div class="container">
+    <div class="containerEighteen">
         <div class="section-title center-align">
             <p>
                 <strong class="textUpper">

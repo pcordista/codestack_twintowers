@@ -89,7 +89,7 @@ input, textarea {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 9999999;
+    z-index: 9999;
     transition: .3s;
 }
 
@@ -157,11 +157,11 @@ input, textarea {
     position: fixed;
     z-index: 999;
     left: 0;
-    right: 0;  
+    right: 0;
     padding: 0 1rem;
 }
 
-.menumobile_logo > img  {
+.menumobile_logo>img {
     width: 20%;
     max-width: 80px !important;
 }
@@ -175,13 +175,13 @@ input, textarea {
     cursor: pointer
 }
 
-.menumobile_toogle > i {
+.menumobile_toogle>i {
     font-size: 2.5rem;
     color: white
 }
 
-
-.pushmenu { /*this is the nav*/
+.pushmenu {
+    /*this is the nav*/
     background: black;
     font-family: Montserrat;
     width: 100%;
@@ -189,9 +189,9 @@ input, textarea {
     height: 100%;
     top: 0;
     z-index: 1000;
-    position:fixed;
+    position: fixed;
 }
-  
+
 .pushmenu a {
     display: block;
     color: white;
@@ -206,36 +206,36 @@ input, textarea {
 .pushmenu a:hover {
     background-color: rgba(255, 255, 255, .2)
 }
-  
+
 .pushmenu a:active {
     background: #454f5c;
     color: #fff;
 }
-  
+
 .pushmenu-right {
     right: -100%;
-  
 }
-  
+
 .pushmenu-right.pushmenu-open {
     right: 0;
 }
-  
+
 .pushmenu-push {
     overflow-x: hidden;
     position: relative;
     right: 0;
 }
-  
+
 .pushmenu-push-toleft {
     right: 100%;
 }
-  
+
 /*Transition*/
+
 .pushmenu, .pushmenu-push {
     -webkit-transition: all 0.3s ease;
     -moz-transition: all 0.3s ease;
-    transition: all 0.3s ease;  
+    transition: all 0.3s ease;
 }
 
 /********************* APRESENTAÇÃO *********************/
@@ -245,7 +245,8 @@ input, textarea {
 }
 
 .apresentacao-title p {
-    line-height: .5rem
+    line-height: .5rem;
+    font-family: 'Montserrat';
 }
 
 .apresentacao-text {
@@ -266,6 +267,11 @@ input, textarea {
     right: 0;
     z-index: -1;
 }
+
+.carousel-bg-yellow .carousel .indicators .indicator-item.active {
+    background-color: var(--yellow);
+}
+
 
 .carousel-empresarios {
     height: 450px
@@ -294,6 +300,10 @@ input, textarea {
     z-index: -1;
 }
 
+.carousel-bg-green .carousel .indicators .indicator-item.active {
+    background-color: var(--green);
+}
+
 .carousel-bg-red::after {
     content: ' ';
     background-color: var(--red);
@@ -303,6 +313,10 @@ input, textarea {
     top: 0;
     right: 0;
     z-index: -1;
+}
+
+.carousel-bg-red .carousel .indicators .indicator-item.active {
+    background-color: var(--red);
 }
 
 /********************* PARALLAX *********************/
@@ -653,7 +667,7 @@ input, textarea {
 
 .divider-footer {
     height: 3px;
-    background-color: rgba(255,255,255,0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .copyright {
@@ -674,4 +688,89 @@ input, textarea {
 .footerfix {
     height: 5px;
     margin-top: -5px;
+}
+
+/********************* AUDITORIO *********************/
+
+.auditorio-about {
+    background-size: initial;
+    background-position: bottom right;
+    background-image: url('../img/bg-aud-presentation.png')!important;
+    background-repeat: no-repeat;
+}
+
+.auditorio {
+    background-size: initial;
+    background-position: center left;
+    background-image: url('../img/bg-auditorios.png')!important;
+    background-repeat: no-repeat;
+}
+
+.auditorio-list>li {
+    list-style-type: disc !important;
+    margin: 10px 0;
+}
+
+
+.salas-list>li {
+    list-style-type: disc !important;
+    margin: 10px 0;
+    font-size: 13px
+}
+
+
+
+.auditorio-galeria-item {
+    margin: 1rem;
+    color: #364656 !important;
+    box-shadow: 0px 2px 18px 0px rgba(0, 0, 0, 0.09);
+}
+
+.auditorio-galeria-text {
+    padding: 10px;
+    min-height: 240px;
+}
+
+.auditorio-galeria-text .textJustify {
+    font-size: 12px
+}
+
+.gallery {
+    display: none;
+}
+
+.pswp {
+    z-index: 10000 !important;
+}
+
+.pswp__img {
+    position: absolute;
+    width: auto !important;
+    height: auto !important;
+    top: 0;
+    left: 0;
+    bottom: 15%;
+    right: 0;
+    display: flex;
+    align-items: center;
+    margin: auto 0;
+}
+
+.pswp--zoom-allowed .pswp__img {
+    cursor: default !important
+}
+
+.pswp__img--placeholder--blank {
+    background: transparent !important;
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery-list>div {
+    width: 32%;
+    margin: 0 .5%;
 }

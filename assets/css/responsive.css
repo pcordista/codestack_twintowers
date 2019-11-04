@@ -54,12 +54,15 @@
     .copyright {
             padding: .5rem 0;
             text-align: center;
+            min-height: 60px;
+            font-size: 10px;
     }
     #contato > img {
         min-height: 1300px
     }
     .footer-contatos {
         font-size: 1.3rem;
+        font-family: 'Verdana';
     }
     .footer-form > .section-title {
         color: white !important
@@ -89,6 +92,14 @@
     }
     .menumobile_logo > img {
         width: 20%;
+    }
+    .footer {
+        background-image: url('../img/bg-footer-tablet.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .footer .full_absolute {
+        position: relative !important
     }
 }
 

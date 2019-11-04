@@ -1,5 +1,5 @@
 <section class="apresentacao sectionStartTwo">
-    <div class="container">
+    <div class="containerEighteen">
 
         <div class="row relative">
             <div class="col s12 m6 l7 apresentacao-content-left">
@@ -42,7 +42,7 @@
         
 
         <div class="row relative sectionStartTwo">
-            <div class="col s12 m6 l6 carousel-bg-green carousel-bg-left relative">
+            <div class="col s12 m6 l5 carousel-bg-green carousel-bg-left relative hide-on-small-only">
                 <div class="carousel carousel-funcionario carousel-slider" data-indicators="true">
                     <div class="carousel-item white-text" href="#one!">
                         <img src="assets/img/slider-fun1.jpg" class="widthfull">
@@ -58,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col s12 m6 l6 apresentacao-content-right margin_1_top_mobile">
+            <div class="col s12 m6 l7 apresentacao-content-right margin_1_top_mobile">
                 <div class="apresentacao-title verdana textItalic textUpper">
                     <P>
                         <strong>
@@ -72,6 +72,22 @@
                 </div>
                 <div class="apresentacao-text bold">
                 Acessibilidade total e espaço próprio para lazer e descanso. O Twin Towers foi pensado para toda a cadeia produtiva, do empresário ao funcionário. Além das vias rápidas, existem diversas rotas de ônibus e pontos em frente às torres e, dentro delas, você encontra opções de alimentação e serviços nas lojas do térreo e sobreloja. Ao redor do Edifício Twin Towers você encontra uma ampla estrutura dos mais diversos produtos e serviços.
+                </div>
+            </div>
+            <div class="col s12 m6 l6 carousel-bg-green margin_2_top_mobile carousel-bg-left relative hide-on-med-and-up">
+                <div class="carousel carousel-funcionario carousel-slider" data-indicators="true">
+                    <div class="carousel-item white-text" href="#one!">
+                        <img src="assets/img/slider-fun1.jpg" class="widthfull">
+                    </div>
+                    <div class="carousel-item white-text" href="#two!">
+                        <img src="assets/img/slider-fun2.jpg" class="widthfull">
+                    </div>
+                    <div class="carousel-item white-text" href="#three!">
+                        <img src="assets/img/slider-fun3.jpg" class="widthfull">
+                    </div>
+                    <div class="carousel-item white-text" href="#four!">
+                        <img src="assets/img/slider-fun4.jpg" class="widthfull">
+                    </div>
                 </div>
             </div>
         </div>
